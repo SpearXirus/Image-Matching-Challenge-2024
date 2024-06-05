@@ -4,10 +4,8 @@ The goal of this project is constructing 3D model from 2D images(called Structur
 
 ## Table of Contents
 
-- [Installation and Usage](#installation_and_usage)
+- [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
