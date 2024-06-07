@@ -54,7 +54,7 @@ Failed. The results of clustering were inadequate.
 #### 3) Using DUSt3R (dust3r-baseline.ipynb)
 - Result
 Failed. The tranlation vector came out strange.
-### 4. As an alternative, we decided to copy and edit other baselines. And we choose "imc-2024-multi-models-pipeline.ipynb".
+### 4. As an alternative, we decided to copy and edit the other baseline. And we choose "imc-2024-multi-models-pipeline.ipynb".
 Also, we decided to add image preprocessing and tune parameters.
 
 ## Result
