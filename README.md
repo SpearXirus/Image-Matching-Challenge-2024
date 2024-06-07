@@ -6,6 +6,7 @@ The goal of this project is constructing 3D model from 2D images(called Structur
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Process](#process)
 
 ## Installation
 
@@ -34,3 +35,19 @@ The goal of this project is constructing 3D model from 2D images(called Structur
 
 ## Usage
 All the work was done in Kaggle. You can simply run the code by running it in Kaggle.
+
+## Process
+1. EDA & study about SfM
+2. Search for related papers and select suitable models
+3. Attempts to develop an algorithm
+  1) Using train_labels to construct 3D models by clustering feature points (creating-a-3d-model-using-train-labels.ipynb)
+    - preprocessing
+    - Extracting feature points
+    - Clustering & RANSAC
+    - Construct 3D model by mapping points
+    - Calculating projection matrices
+  2) Using train_labels to construct 3D models by feature points matching (creating-a-3d-model-using-train-labels.ipynb)
+    - preprocessing
+    - Extracting feature points
+    - Feature points matching
+    - Graph-based clustering
