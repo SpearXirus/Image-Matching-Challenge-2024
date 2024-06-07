@@ -7,6 +7,7 @@ The goal of this project is constructing 3D model from 2D images(called Structur
 - [Installation](#installation)
 - [Usage](#usage)
 - [Process](#process)
+- [Result](#result)
 
 ## Installation
 
@@ -40,14 +41,21 @@ All the work was done in Kaggle. You can simply run the code by running it in Ka
 1. EDA & study about SfM
 2. Search for related papers and select suitable models
 3. Attempts to develop an algorithm
-  1) Using train_labels to construct 3D models by clustering feature points (creating-a-3d-model-using-train-labels.ipynb)
-    - preprocessing
-    - Extracting feature points
-    - Clustering & RANSAC
-    - Construct 3D model by mapping points
-    - Calculating projection matrices
-  2) Using train_labels to construct 3D models by feature points matching (creating-a-3d-model-using-train-labels.ipynb)
-    - preprocessing
-    - Extracting feature points
-    - Feature points matching
-    - Graph-based clustering
+1) Using train_labels to construct 3D models by clustering feature points (creating-a-3d-model-using-train-labels.ipynb)
+- Process
+Preprocessing - Extracting feature points - Clustering & RANSAC - Construct 3D model by mapping points - Calculating projection matrices
+- Result
+Failed. The projection matrix came out strange.
+2) Using train_labels to construct 3D models by feature points matching (my-baseline-for-imc-2024.xpynb)
+- process
+Preprocessing - Extracting feature points - Feature points matching - Graph-based clustering
+- Result
+Failed. The results of clustering were inadequate.
+3) Using DUSt3R (dust3r-baseline.ipynb)
+- Result
+Failed. The tranlation vector came out strange.
+4. As an alternative, we decided to copy and edit other baselines. And we choose imc-2024-multi-models-pipeline.ipynb.
+So, we decided to add image preprocessing and tune parameters.
+
+## Result
+Finally, we scored a maximum of 0.15 points and ranked 180th out of 1003 teams.
